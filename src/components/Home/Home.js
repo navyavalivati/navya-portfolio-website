@@ -3,6 +3,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { useSpring, animated } from "react-spring";
 import "./Home.css";
+import myImage from './my_image.png';
 
 const loadFontAwesome = () => {
   const link = document.createElement("link");
@@ -75,7 +76,7 @@ const Home = () => {
         </div>
         <div className="round-image-container">
           <div className="round-image-border"></div>
-          <img src="./assets/my_image.png" alt="my_image" className="round_image"/>
+          <img src={myImage} alt="my_image" className="round_image"/>
         </div>
       </div>
       <div id="stars4"></div>
