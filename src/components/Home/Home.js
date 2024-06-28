@@ -3,6 +3,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { useSpring, animated } from "react-spring";
 import "./Home.css";
+import "./animation.css";
 import myImage from './my_image.png';
 
 const loadFontAwesome = () => {

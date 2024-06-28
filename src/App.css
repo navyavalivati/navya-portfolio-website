@@ -7,11 +7,11 @@
 }
 
 .app.dark {
-  background: linear-gradient(#1A1A2E, #16213E, #0F3460);
+  background: linear-gradient(#9c9cb8, #16213E, #0F3460);
 }
 
 .navbar.light {
-  background: linear-gradient(#9B86BD, #7776B3, #5A639C);
+  background: linear-gradient(#9B86BD, #6e6d9b, #5A639C);
 }
 
 .navbar.dark {
