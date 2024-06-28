@@ -55,7 +55,7 @@ small {
   height: 100%;
   border-radius: 50%;
   border: 5px solid transparent;
-  border-top: 5px solid #0d057a;
+  border-top: 5px solid #554dc7;
   animation: rotateBorder 2s linear infinite;
   z-index: 0;
 }

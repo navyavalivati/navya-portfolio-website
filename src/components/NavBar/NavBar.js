@@ -29,13 +29,17 @@ const NavBar = () => {
       <div className="hamburger" onClick={toggleMenu}>
         ☰
       </div>
-      <ReactSwitch 
-        onChange={toggle} 
-        checked={theme === "dark"} 
-        offColor="#bbb"
-        onColor="#333"
-        className="theme-switch"
-      />
+      <div className="theme-switch-container">
+        <span className="theme-text">Light Mode</span>
+        <ReactSwitch 
+          onChange={toggle} 
+          checked={theme === "dark"} 
+          offColor="#bbb"
+          onColor="#333"
+          className="theme-switch"
+        />
+        <span className="theme-text">Dark Mode</span>
+      </div>
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
           <Link

@@ -61,6 +61,17 @@ nav .hamburger {
   margin-left: 10px;
 }
 
+.theme-switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.theme-text {
+  margin: 0 10px;
+  font-size: 15px;
+  color: #fff; /* or adjust color based on your theme */
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -80,15 +91,11 @@ nav ul li {
   cursor: pointer;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   nav .hamburger {
       display: block;
       margin-right: auto; /* Ensure the hamburger menu is on the left */
   }
-
-  
-
   nav ul {
       flex-direction: column;
       position: absolute;
