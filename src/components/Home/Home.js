@@ -4,7 +4,8 @@ import { Typewriter } from "react-simple-typewriter";
 import { useSpring, animated } from "react-spring";
 import {ThemeContext} from '../../App';
 import "./Home.css";
-
+import CIcon from '@coreui/icons-react';
+import {cibLeetcode} from '@coreui/icons';
 import myImage from './my_image.png';
 
 const loadFontAwesome = () => {
@@ -73,6 +74,10 @@ const Home = () => {
             </a>
             <a href="https://www.hackerrank.com/profile/valevati_navya" className="icon-link" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-hackerrank"></i>
+            </a>
+            <a href="https://www.hackerrank.com/profile/valevati_navya" className="icon-link" target="_blank" rel="noopener noreferrer">
+              <CIcon icon={cibLeetcode} size="sm" width={30}>
+              </CIcon>
             </a>
           </div>
         </div>
