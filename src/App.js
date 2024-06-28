@@ -3,6 +3,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
 import { Element } from "react-scroll";
 import './App.css';
 import "./animation.css";
@@ -36,6 +37,9 @@ function App() {
         </Element>
         <Element name="skills">
           <Skills />
+        </Element>
+        <Element name="projects">
+          <Projects />
         </Element>
       </div>
     </ThemeContext.Provider>

@@ -43,7 +43,8 @@ const Home = () => {
             <Typewriter
               words={[
                 "Software Development Engineer",
-                "Quality Assurance Engineer"
+                "Quality Assurance Engineer",
+                "Software Development Engineer"
               ]}
               loop={1}
               cursor

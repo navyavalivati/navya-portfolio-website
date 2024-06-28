@@ -79,7 +79,7 @@
 }
 .flashcard.right.light {
   animation: slideInRight 0.5s ease-in-out;
-  background: linear-gradient(to right, #9b86bd, #5A639C);
+  background: linear-gradient(#9B86BD, #6e6d9b, #5A639C);
 }
 .flashcard.right.dark {
   animation: slideInRight 0.5s ease-in-out;

@@ -1,11 +1,11 @@
 .home {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* Allow content to wrap */
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  min-height: 100vh; /* Use min-height instead of height */
+  min-height: 100vh; 
   font-size: large;
   position: relative;
   overflow: hidden;

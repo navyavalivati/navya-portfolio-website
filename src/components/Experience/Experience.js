@@ -17,7 +17,7 @@ export default function Experience() {
 
   return (
     <div className="experience">
-      <h1>Experience Section </h1>
+      <h1>Experience</h1>
       <div className="flashcard-container">
         {experienceList.map((exp) => (
           <div
