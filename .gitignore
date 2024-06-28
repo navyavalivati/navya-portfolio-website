@@ -11,8 +11,8 @@
 # production
 /build
 
-/my_image.png
 # misc
+*.png
 .DS_Store
 .env.local
 .env.development.local
