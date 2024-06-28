@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/navya-portfolio-website/static/css/main.fde731af.css",
-    "main.js": "/navya-portfolio-website/static/js/main.ddc6eb4d.js",
+    "main.css": "/navya-portfolio-website/static/css/main.fba392b7.css",
+    "main.js": "/navya-portfolio-website/static/js/main.8867f1fe.js",
     "static/js/453.676a9e46.chunk.js": "/navya-portfolio-website/static/js/453.676a9e46.chunk.js",
     "static/media/my_image.png": "/navya-portfolio-website/static/media/my_image.b5df138cf594a6dcdc87.png",
     "static/media/about.gif": "/navya-portfolio-website/static/media/about.2cd34cfd8647d8ac37f9.gif",
     "index.html": "/navya-portfolio-website/index.html",
-    "main.fde731af.css.map": "/navya-portfolio-website/static/css/main.fde731af.css.map",
-    "main.ddc6eb4d.js.map": "/navya-portfolio-website/static/js/main.ddc6eb4d.js.map",
+    "main.fba392b7.css.map": "/navya-portfolio-website/static/css/main.fba392b7.css.map",
+    "main.8867f1fe.js.map": "/navya-portfolio-website/static/js/main.8867f1fe.js.map",
     "453.676a9e46.chunk.js.map": "/navya-portfolio-website/static/js/453.676a9e46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fde731af.css",
-    "static/js/main.ddc6eb4d.js"
+    "static/css/main.fba392b7.css",
+    "static/js/main.8867f1fe.js"
   ]
 }
