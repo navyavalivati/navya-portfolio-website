@@ -76,7 +76,7 @@ const Home = () => {
         </div>
         <div className="round-image-container">
           <div className="round-image-border"></div>
-          <img src="https://github.com/navyavalivati/react-my-portfolio/blob/0e29d340e1f3ef04e1f56fdc1199d46e6bd961a8/src/assets/my_image.png" alt="my_image" className="round_image"/>
+          <img src={myImage} alt="my_image" className="round_image"/>
         </div>
       </div>
       <div id="stars4"></div>
