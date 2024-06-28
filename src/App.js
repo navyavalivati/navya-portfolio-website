@@ -2,6 +2,7 @@ import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
+import Skills from './components/Skills/Skills';
 import { Element } from "react-scroll";
 import './App.css';
 import "./animation.css";
@@ -32,6 +33,9 @@ function App() {
         </Element>
         <Element name="experience">
           <Experience />
+        </Element>
+        <Element name="skills">
+          <Skills />
         </Element>
       </div>
     </ThemeContext.Provider>
