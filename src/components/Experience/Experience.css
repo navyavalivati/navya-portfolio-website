@@ -6,16 +6,28 @@
   min-height: 100vh;
   flex: 1;
   line-height: 1.5;
+  background: linear-gradient(#C6CF9B, #596FB7, #11235A);
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
 }
-
+.more-button {
+  background-color: #6494dd;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
 .flashcard-container {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
   justify-content: center; /* Center the flashcards horizontally */
-  gap: 20px; /* Space between flashcards */
+  gap: 20px; 
 }
 
 .flashcard {
@@ -23,7 +35,7 @@
   border: 1px solid #ccc0e9;
   border-radius: 8px;
   padding: 20px;
-  width: 400px; /* Adjust the width as needed */
+  width: 500px; /* Adjust the width as needed */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Example of a transition property */
 }
@@ -38,8 +50,11 @@
 }
 
 .flashcard-logo {
-  max-width: 100%;
-  height: auto;
+  display: block;
+  width: 150px;
+  height: 55px;
+  margin: 30px auto 0;
+  border-radius: 10px;
 }
 
 /* Ensure your existing animation keyframes are included */
