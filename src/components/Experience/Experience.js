@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import experienceList from "./experienceData";
 import "./Experience.css";
 import Popup from "./Popup";
+import {ThemeContext} from "../../App";
 
 export default function Experience() {
   const [selectedExperience, setSelectedExperience] = useState(null);
-
+  const {theme} = useContext(ThemeContext);
   const handleLearnMoreClick = (exp) => {
     setSelectedExperience(exp);
   };
@@ -21,7 +22,7 @@ export default function Experience() {
         {experienceList.map((exp) => (
           <div
             key={exp.id}
-            className={`flashcard ${exp.id % 2 === 0 ? "right" : "left"}`}
+            className={`flashcard ${exp.id % 2 === 0 ? "right" : "left"} ${theme}`}
           >
             <h3>{exp.role}</h3>
             <img src={exp.logo} alt="Logo" className="flashcard-logo" />

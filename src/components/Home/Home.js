@@ -1,8 +1,8 @@
 import { Link } from "react-scroll";
-import React from "react";
+import React, { useContext } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { useSpring, animated } from "react-spring";
-
+import {ThemeContext} from '../../App';
 import "./Home.css";
 
 import myImage from './my_image.png';
@@ -30,6 +30,7 @@ const Home = () => {
     config: { duration: 1000 },
   });
 
+  const {theme} = useContext(ThemeContext);
   return (
     <div className="home">
       
@@ -59,8 +60,8 @@ const Home = () => {
             deliver exceptional results.
           </p>
           <div className="button-container">
-            <Link to="about" smooth={true} duration={500} className="more-button">More About Me</Link>
-            <button onClick={resumeLink} className="resume-button"> Download Resume </button>
+            <Link to="about" smooth={true} duration={500} className={`more-button ${theme}`}>More About Me</Link>
+            <button onClick={resumeLink} className={`resume-button ${theme}`}> Download Resume </button>
           </div>
           <div className="icon-container">
             <a href="https://www.linkedin.com/in/navya-valivati/" className="icon-link" target="_blank" rel="noopener noreferrer">

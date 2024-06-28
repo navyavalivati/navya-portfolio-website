@@ -15,7 +15,6 @@ p,
 h1,
 h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #fff;
   text-align: center;
   line-height: 1.5;
 }
@@ -89,7 +88,7 @@ small {
 
 .more-button,
 .resume-button {
-  background-color: #6494dd;
+  
   align-items: center;
   color: white;
   font-size: 20px;
@@ -106,6 +105,12 @@ small {
   background-color: #647265;
 }
 
+.more-button.dark, .resume-button.dark {
+  background-color: #0F3460
+}
+.more-button.light, .resume-button.light {
+  background: linear-gradient(#9B86BD, #6e6d9b, #5A639C);
+}
 .icon-container {
   display: flex;
   justify-content: center;
@@ -120,5 +125,5 @@ small {
 }
 
 .icon-link:hover {
-  color: #007bff;
+  color: #717477;
 }
