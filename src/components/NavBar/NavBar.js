@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-scroll";
+import { ThemeContext } from '../../App';
+import ReactSwitch from 'react-switch';
 import "./NavBar.css";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, toggle } = useContext(ThemeContext);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,16 +21,21 @@ const NavBar = () => {
 
     return () => {
       document.body.classList.remove("menu-open");
-      window.scroll(0,0);
     };
-    
   }, [isOpen]);
 
   return (
-    <nav>
+    <nav className={`navbar ${theme}`}>
       <div className="hamburger" onClick={toggleMenu}>
         ☰
       </div>
+      <ReactSwitch 
+        onChange={toggle} 
+        checked={theme === "dark"} 
+        offColor="#bbb"
+        onColor="#333"
+        className="theme-switch"
+      />
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
           <Link
@@ -74,7 +82,21 @@ const NavBar = () => {
             Experience
           </Link>
         </li>
-        
+        <li>
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            exact="true"
+            onClick={toggleMenu}
+            className="neon-button"
+          >
+            Skills
+          </Link>
+        </li>
         <li>
           <Link
             activeClass="active"
@@ -90,6 +112,7 @@ const NavBar = () => {
             Projects
           </Link>
         </li>
+        
       </ul>
     </nav>
   );

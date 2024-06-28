@@ -1,6 +1,5 @@
 .about {
     min-height: 100vh;
-    background: linear-gradient(#C6CF9B, #596FB7, #11235A);
     padding: 20px;
 }
 
@@ -13,11 +12,12 @@
   display: flex;
   flex-direction: row;
   align-items: left;
-  justify-content:flex-end;
+  justify-content: space-between;
 }
 
 .text {
   flex: 1;
+  margin-left: 20px;
   text-align: justify;
   border: 2px solid #11235A;
   border-radius: 10px;

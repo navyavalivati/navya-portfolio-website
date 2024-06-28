@@ -1,124 +1,137 @@
 html, body {
-    overflow-y: auto;   /* Allows vertical scroll */
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  overflow-y: auto;   /* Allows vertical scroll */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#C6CF9B, #596FB7, #11235A);  /* Ensure background color for entire page */
+}
+
+body {
+  padding-top: 60px;  /* Add padding to prevent content from overlapping navbar */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
     height: 30px;
-    background: linear-gradient(#9B86BD, #7776B3, #5A639C);
+  background: linear-gradient(#9B86BD, #7776B3, #5A639C);
     padding: 1rem 0;
-    z-index: 1000;
-    display: flex;
-    border-radius: 25px;
-    justify-content: space-between;
-    align-items: center;
-    border-color: transparent;
-      box-shadow: 0 0 15px rgb(101, 129, 129), 0 0 30px rgb(30, 88, 128), 0 0 45px rgb(58, 48, 153);
-  }
-  
-  .neon-button {
-      position: relative;
-      width: 100px;
-      height: 45px;
-      border-radius: 30px;
-      font-size: 15px;
-      color: #fff;
-      background-color: linear-gradient(#9B86BD, #7776B3, #5A639C);
-      border: 0px solid rgb(91, 66, 133);
-      cursor: pointer;
-      overflow: hidden;
-      transition: border-color 0.8s;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 10;
-  }
-  
-  .neon-button:hover {
-      border-color: transparent;
-      box-shadow: 0 0 15px #535C91, 0 0 30px #1B1A55, 0 0 45px #070F2B;
-  }
+  z-index: 1000;
+  display: flex;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+  border-color: transparent;
+  box-shadow: 0 0 15px rgb(101, 129, 129), 0 0 30px rgb(30, 88, 128), 0 0 45px rgb(58, 48, 153);
+}
+
+.neon-button {
+  position: relative;
+  width: 100px;
+  height: 45px;
+  border-radius: 30px;
+  font-size: 15px;
+  color: #fff;
+  background-color: linear-gradient(#9B86BD, #7776B3, #5A639C);
+  border: 0px solid rgb(91, 66, 133);
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.neon-button:hover {
+  border-color: transparent;
+  box-shadow: 0 0 15px #535C91, 0 0 30px #1B1A55, 0 0 45px #070F2B;
+}
+
+nav .hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  padding: 15px;
+}
+
+.theme-switch {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  z-index: 1;
+}
+
+nav ul :hover {
+  color: #fff;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   nav .hamburger {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-    padding: 15px;
-  }
-    
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-    flex: 1; 
-    z-index: 1;
-  }
-  
-  nav ul :hover {
-    color: #fff;
-  }
-  
-  nav ul li {
-    cursor: pointer;
-  }
-  
-    /* Responsive styles */
-  @media (max-width: 768px) {
-    nav .hamburger {
       display: block;
-      margin-left: auto; /* Ensure the hamburger menu is on the right */
-    }
-    
-    nav ul {
+      margin-right: auto; /* Ensure the hamburger menu is on the left */
+  }
+
+  
+
+  nav ul {
       flex-direction: column;
       position: absolute;
       padding: 0;
       margin: 0;
       top: 100%;
-      right: -100%; /* Start off-screen to the right */
+      left: -100%; /* Start off-screen to the left */
       background: linear-gradient(#9B86BD, #7776B3, #5A639C);
       width: 50%;
       height: calc(100vh - 60px);
-      transition: right 0.3s ease;
+      transition: left 0.3s ease;
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
-    }
-    
-    nav ul.open {
-      right: 0; /* Slide in from the right */
-    }
   }
-  /* Width and color of the scrollbar */
-  ::-webkit-scrollbar {
-    width: 12px;
+
+  nav ul.open {
+      left: 0; /* Slide in from the left */
   }
-  
-  /* Background of the scrollbar track set to transparent */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 10px;
-  }
-  
-  /* Handle of the scrollbar */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  
-  #about, #home, #experience , #skills, #certifications {
-    height: 100vh;
-  }
-  
-  
-  
+}
+
+/* Width and color of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Background of the scrollbar track set to transparent */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#about, #home, #experience, #skills, #certifications {
+  height: 100vh;
+}

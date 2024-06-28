@@ -4,32 +4,28 @@ import About from './components/About/About';
 import { Element } from "react-scroll";
 import './App.css';
 import { createContext, useState } from 'react';
-import ReactSwitch from 'react-switch';
 
 export const ThemeContext = createContext(null);
+
 function App() {
   const [theme, setTheme] = useState("light");
-    const toggle = () => {
-        setTheme((currTheme) =>  (currTheme === "light" ? "dark" : "light"));
-    }
+
+  const toggle = () => {
+    setTheme((currTheme) => (currTheme === "light" ? "dark" : "light"));
+  }
+
   return (
-    <>
-      <div>
+    <ThemeContext.Provider value={{ theme, toggle }}>
+      <div className={`app ${theme}`}>
         <NavBar />
-      </div>
-      
-      <div>
-      <ThemeContext.Provider value={{theme, toggle}}>
-        <Element name="home" id={theme}>
+        <Element name="home">
           <Home />
-          {/* <ReactSwitch onChange={toggle} checked={theme === "dark"}/> */}
         </Element>
-        <Element name="about" id={theme}>
+        <Element name="about">
           <About />
         </Element>
-      </ThemeContext.Provider>
       </div>
-    </>
+    </ThemeContext.Provider>
   );
 }
 

@@ -1,6 +1,6 @@
 /* Home.css */
 .home {
-  background: linear-gradient(#C6CF9B, #596FB7, #11235A);
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
