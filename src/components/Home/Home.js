@@ -2,8 +2,9 @@ import { Link } from "react-scroll";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { useSpring, animated } from "react-spring";
+
 import "./Home.css";
-import "./animation.css";
+
 import myImage from './my_image.png';
 
 const loadFontAwesome = () => {
@@ -31,12 +32,8 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div class="animation-container">
-        <div class="stars"></div>
-        <div id="shooting-star"></div>
-      </div>
-      <div className="home-content">
       
+      <div className="home-content">
         <div className="home-text">
           <animated.h1 style={props} className="name">
             Navya Valivati
@@ -55,14 +52,12 @@ const Home = () => {
               delaySpeed={1000}
             />
           </h2>
-          <div className="stars"></div>
           <p>
             Welcome to my portfolio! I am a passionate Frontend Developer. 
             I excel in ensuring product quality, streamlining testing processes, and solving complex tasks. 
             I aim to leverage my strong technical and organizational skills to tackle new challenges and 
             deliver exceptional results.
           </p>
-          <div className="stars"></div>
           <div className="button-container">
             <Link to="about" smooth={true} duration={500} className="more-button">More About Me</Link>
             <button onClick={resumeLink} className="resume-button"> Download Resume </button>

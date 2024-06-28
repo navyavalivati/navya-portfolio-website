@@ -1,8 +1,10 @@
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Experience from './components/Experience/Experience';
 import { Element } from "react-scroll";
 import './App.css';
+import "./animation.css";
 import { createContext, useState } from 'react';
 
 export const ThemeContext = createContext(null);
@@ -16,6 +18,10 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggle }}>
+      <div className="animation-container">
+        <div id="stars"></div>
+        <div id="shooting-star"></div>
+      </div>
       <div className={`app ${theme}`}>
         <NavBar />
         <Element name="home">
@@ -23,6 +29,9 @@ function App() {
         </Element>
         <Element name="about">
           <About />
+        </Element>
+        <Element name="experience">
+          <Experience />
         </Element>
       </div>
     </ThemeContext.Provider>

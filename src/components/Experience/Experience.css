@@ -1,0 +1,80 @@
+/* Experience.css */
+
+.experience {
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+  flex: 1;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.flashcard-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+  justify-content: center; /* Center the flashcards horizontally */
+  gap: 20px; /* Space between flashcards */
+}
+
+.flashcard {
+  background-color: #8c8baf;
+  border: 1px solid #ccc0e9;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px; /* Adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Example of a transition property */
+}
+
+.flashcard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard h3 {
+  margin-top: 0;
+}
+
+.flashcard-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure your existing animation keyframes are included */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Example of maintaining existing animations */
+.flashcard.left {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+.flashcard.right {
+  animation: slideInRight 0.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,6 +1,7 @@
 import "./About.css";
 import aboutGIF from './about.gif';
-const About = () => (
+export default function About () {
+  return (
   <div className="about">
     <h1>About Section</h1>
     <div className="about-container">
@@ -31,6 +32,5 @@ const About = () => (
     </div>
   
   </div>
-);
-
-export default About;
+  );
+};

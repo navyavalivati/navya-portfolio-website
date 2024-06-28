@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  min-height: 100vh;
+  height: 100vh;
   font-size: large;
   position: relative;
   overflow: hidden;
@@ -61,10 +61,10 @@ small {
 
 @keyframes rotateBorder {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -121,26 +121,4 @@ small {
 
 .icon-link:hover {
   color: #007bff;
-}
-
-/* Add media query for smaller screens */
-@media (max-width: 768px) {
-  .home {
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  .home-content {
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  .round-image-container {
-      margin-bottom: 20px;
-  }
-  
-  .home-text {
-      text-align: center;
-      padding: 0;
-  }
 }
