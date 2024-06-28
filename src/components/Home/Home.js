@@ -31,14 +31,17 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div id="stars"></div>
+      <div class="animation-container">
+        <div class="stars"></div>
+        <div id="shooting-star"></div>
+      </div>
       <div className="home-content">
+      
         <div className="home-text">
           <animated.h1 style={props} className="name">
             Navya Valivati
           </animated.h1>
           <h2>
-            <div id="stars2"></div>
             <Typewriter
               words={[
                 "Software Development Engineer",
@@ -52,13 +55,14 @@ const Home = () => {
               delaySpeed={1000}
             />
           </h2>
-          <div id="stars3"></div>
+          <div className="stars"></div>
           <p>
             Welcome to my portfolio! I am a passionate Frontend Developer. 
             I excel in ensuring product quality, streamlining testing processes, and solving complex tasks. 
             I aim to leverage my strong technical and organizational skills to tackle new challenges and 
             deliver exceptional results.
           </p>
+          <div className="stars"></div>
           <div className="button-container">
             <Link to="about" smooth={true} duration={500} className="more-button">More About Me</Link>
             <button onClick={resumeLink} className="resume-button"> Download Resume </button>
@@ -80,7 +84,6 @@ const Home = () => {
           <img src={myImage} alt="my_image" className="round_image"/>
         </div>
       </div>
-      <div id="stars4"></div>
     </div>
   );
 };
