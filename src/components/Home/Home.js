@@ -60,7 +60,7 @@ const Home = () => {
             deliver exceptional results.
           </p>
           <div className="button-container">
-            <Link to="about" smooth={true} duration={500} className={`more-button ${theme}`}>More About Me</Link>
+            <Link to="about" smooth={true} duration={500} className={`more-button ${theme}`}>Who Am I?</Link>
             <button onClick={resumeLink} className={`resume-button ${theme}`}> Download Resume </button>
           </div>
           <div className="icon-container">

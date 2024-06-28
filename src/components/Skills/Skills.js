@@ -19,7 +19,7 @@ const Skills = () => {
               <img src= {skill.logo} alt={skill.name}></img>
               <p className='skills-card-text'>{skill.name}</p>
             </div>
-          ))};
+          ))}
         </div>
       </div>
       </div>
