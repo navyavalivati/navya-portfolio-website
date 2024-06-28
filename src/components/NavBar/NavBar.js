@@ -74,21 +74,6 @@ const NavBar = () => {
             Experience
           </Link>
         </li>
-        <li>
-          <Link
-            activeClass="active"
-            to="skills"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            exact="true"
-            onClick={toggleMenu}
-            className="neon-button"
-          >
-            Skills
-          </Link>
-        </li>
         
         <li>
           <Link

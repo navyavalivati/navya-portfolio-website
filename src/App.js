@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
+import About from './components/About/About';
 import { Element } from "react-scroll";
 import './App.css';
 import { createContext, useState } from 'react';
@@ -21,9 +22,11 @@ function App() {
       <ThemeContext.Provider value={{theme, toggle}}>
         <Element name="home" id={theme}>
           <Home />
-          <ReactSwitch onChange={toggle} checked={theme === "dark"}/>
+          {/* <ReactSwitch onChange={toggle} checked={theme === "dark"}/> */}
         </Element>
-      
+        <Element name="about" id={theme}>
+          <About />
+        </Element>
       </ThemeContext.Provider>
       </div>
     </>
