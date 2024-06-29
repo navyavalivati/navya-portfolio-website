@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaBrain, FaNetworkWired, FaAngular } from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3Alt,FaNodeJs, FaJsSquare, FaBrain, FaNetworkWired, FaAngular } from 'react-icons/fa';
 import { SiSolidity ,SiPython } from 'react-icons/si'
 import './Projects.css';
 import { ThemeContext } from '../../App';
@@ -13,8 +13,8 @@ const icons = {
   MachineLearning: <FaBrain />, 
   BlockChain: <FaNetworkWired/>,
   Python: <SiPython/>,
-  Angular: <FaAngular/>
-  // Add more icons as needed
+  Angular: <FaAngular/>,
+  NodeJS: <FaNodeJs/>
 };
 
 const EachProject = ({ title, description, techStack, githubLink }) => {
