@@ -17,16 +17,13 @@ export default function About () {
     
       <div className="text">
         <animated.p style={props}>
-        I am currently pursuing a Master's in Computer Science at Missouri
-        University of Science and Technology, where I have maintained a GPA of
-        3.5/4 since August 2023. Prior to this, I completed my Bachelor's degree
-        in Computer Science at Jawaharlal Nehru Technological University from
-        July 2018 to July 2022. <br /> <br/>I am
-        passionate about competitive programming and problem-solving, which have
-        helped me develop strong analytical thinking and the ability to tackle
-        complex challenges. <br/> <br/> In addition to my technical skills, I am a strong team
-        leader. I believe in collaboration and driving projects to successful
-        completion.I am a person who welcomes new challenges and consistently proves my ability to overcome them!
+        I'm currently pursuing Master's in Computer Science at Missouri University of Science and Technology, where I've kept a solid GPA of 3.5/4 since August 2023.
+        Before this, I got my Bachelor's degree in Computer Science from Jawaharlal Nehru Technological University (July 2018 - July 2022).
+        <br /> <br/>
+        I love competitive programming and problem-solving, which have helped me think analytically and tackle tough challenges.
+        <br/> <br/> 
+        I'm also a strong team leader who believes in working together to get projects done successfully. I welcome new challenges and always prove my ability to overcome them!
+        Get to know about my experience by scrolling to experience section! :)
         </animated.p>
         
       </div>
