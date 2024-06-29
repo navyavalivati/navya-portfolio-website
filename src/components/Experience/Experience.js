@@ -29,7 +29,7 @@ export default function Experience() {
             <p>{exp.duration}</p>
             <p>{exp.shortdescription}</p>
             <button onClick={() => handleLearnMoreClick(exp)} className="more-button">
-              Learn More
+              Know More!
             </button>
           </div>
         ))}
