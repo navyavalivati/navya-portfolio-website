@@ -1,45 +1,38 @@
 import React from 'react';
+import './Contact.css';
 
 const Contact = () => {
+  const resumeLink = () => {
+    window.open('https://drive.google.com/file/d/1xlGyrnDDpHWLT2a-ZHbR6oNBctovAyLJ/view?usp=sharing', '_blank');
+  };
   return (
-    <div style={{ padding: '20px', textAlign: 'left' }}>
-      <h1 style={{ fontSize: '48px' }}>Contact Me</h1>
-      <div style={{ marginTop: '20px' }}>
-        <a href="/path-to-resume.pdf" download="Resume_Navya_Valivati.pdf">
-          <button style={buttonStyle}>Download Resume</button>
-        </a>
-        <div style={{ marginTop: '20px' }}>
-          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
-            LinkedIn
+    <div className="contact-container">
+      <h1 className="contact-title">Hire Me!</h1>
+      <div className="contact-content">
+
+      <div className="button-container">
+            <button onClick={resumeLink} className="download-button"> Download Resume </button>
+          </div>
+        <div className="icon-container">
+          <a href="mailto:valivati.navya@gmail.com" className="icon-link" target="_blank" rel="noopener noreferrer">
+            <i className="fas fa-envelope"></i>
           </a>
-          <br />
-          <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer">
-            GitHub
+          <a href="https://www.linkedin.com/in/navya-valivati/" className="icon-link" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i>
           </a>
-          <br />
-          <a href="/path-to-resume.pdf" target="_blank" rel="noopener noreferrer">
-            Resume
+          <a href="https://github.com/navyavalivati" className="icon-link" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://www.hackerrank.com/profile/valevati_navya" className="icon-link" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-hackerrank"></i>
           </a>
         </div>
       </div>
-      <div style={{ marginTop: '40px', fontStyle: 'italic', textAlign: 'center' }}>
-        <p>&copy; 2024 NavyaValivati. All rights reserved.</p>
+      <div className="citation">
+        <p>&copy; 2024 Navya Valivati. All rights reserved.</p>
       </div>
     </div>
   );
-};
-
-const buttonStyle = {
-  backgroundColor: '#4CAF50', // Green
-  border: 'none',
-  color: 'white',
-  padding: '15px 32px',
-  textAlign: 'center',
-  textDecoration: 'none',
-  display: 'inline-block',
-  fontSize: '16px',
-  margin: '4px 2px',
-  cursor: 'pointer'
 };
 
 export default Contact;

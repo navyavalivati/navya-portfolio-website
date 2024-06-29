@@ -18,7 +18,7 @@ const loadFontAwesome = () => {
 const Home = () => {
 
   const resumeLink = () => {
-    window.open('https://drive.google.com/file/d/1j4T0DbjGGfBkjkmF43M5YOwwCjipiyUX/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1xlGyrnDDpHWLT2a-ZHbR6oNBctovAyLJ/view?usp=sharing', '_blank');
   };
 
   React.useEffect(() => {
@@ -56,16 +56,18 @@ const Home = () => {
             />
           </h2>
           <p>
-            Welcome to my portfolio! I am a passionate Frontend Developer. 
-            I excel in ensuring product quality, streamlining testing processes, and solving complex tasks. 
-            I aim to leverage my strong technical and organizational skills to tackle new challenges and 
-            deliver exceptional results.
+          Welcome to my portfolio! I am Navya Valivati, a passionate software developer with a love for creating innovative solutions. 
+          Dive into my journey and explore my skills, experiences, and projects. Get to know more about me and my work through this portfolio. 
+          Enjoy your visit!
           </p>
           <div className="button-container">
             <Link to="about" smooth={true} duration={500} className={`more-button ${theme}`}>Who Am I?</Link>
             <button onClick={resumeLink} className={`resume-button ${theme}`}> Download Resume </button>
           </div>
           <div className="icon-container">
+            <a href="mailto:valivati.navya@gmail.com" className="icon-link" target="_blank" rel="noopener noreferrer">
+              <i className="fas fa-envelope"></i>
+            </a>
             <a href="https://www.linkedin.com/in/navya-valivati/" className="icon-link" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>
             </a>
@@ -75,7 +77,7 @@ const Home = () => {
             <a href="https://www.hackerrank.com/profile/valevati_navya" className="icon-link" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-hackerrank"></i>
             </a>
-            <a href="https://www.hackerrank.com/profile/valevati_navya" className="icon-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://leetcode.com/u/navyavalivati/" className="icon-link" target="_blank" rel="noopener noreferrer">
               <CIcon icon={cibLeetcode} size="sm" width={30}>
               </CIcon>
             </a>
