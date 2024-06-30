@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/navya-portfolio-website/static/css/main.80664cf1.css",
+    "main.css": "/navya-portfolio-website/static/css/main.421e0b9c.css",
     "main.js": "/navya-portfolio-website/static/js/main.fa027fc3.js",
     "static/js/453.816666e1.chunk.js": "/navya-portfolio-website/static/js/453.816666e1.chunk.js",
     "static/media/my_image.png": "/navya-portfolio-website/static/media/my_image.b5df138cf594a6dcdc87.png",
@@ -10,12 +10,12 @@
     "static/media/sql.jpg": "/navya-portfolio-website/static/media/sql.b728374ac1aac0c20ba6.jpg",
     "static/media/planful.png": "/navya-portfolio-website/static/media/planful.4b6a1b098e192bb4c001.png",
     "index.html": "/navya-portfolio-website/index.html",
-    "main.80664cf1.css.map": "/navya-portfolio-website/static/css/main.80664cf1.css.map",
+    "main.421e0b9c.css.map": "/navya-portfolio-website/static/css/main.421e0b9c.css.map",
     "main.fa027fc3.js.map": "/navya-portfolio-website/static/js/main.fa027fc3.js.map",
     "453.816666e1.chunk.js.map": "/navya-portfolio-website/static/js/453.816666e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80664cf1.css",
+    "static/css/main.421e0b9c.css",
     "static/js/main.fa027fc3.js"
   ]
 }
