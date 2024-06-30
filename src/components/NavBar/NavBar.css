@@ -1,21 +1,21 @@
 html, body {
-  overflow-y: auto;   /* Allows vertical scroll */
+  overflow-y: auto;
   margin: 0;
   padding: 0;
-  background: linear-gradient(#C6CF9B, #596FB7, #11235A);  /* Ensure background color for entire page */
+  
 }
 
 body {
-  padding-top: 60px;  /* Add padding to prevent content from overlapping navbar */
+  padding-top: 60px;
 }
 
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-    height: 30px;
+  height: 30px;
   background: linear-gradient(#9B86BD, #7776B3, #5A639C);
-    padding: 1rem 0;
+  padding: 1rem 0;
   z-index: 1000;
   display: flex;
   border-radius: 25px;
@@ -69,7 +69,7 @@ nav .hamburger {
 .theme-text {
   margin: 0 10px;
   font-size: 15px;
-  color: #fff; /* or adjust color based on your theme */
+  color: #fff;
 }
 
 nav ul {
@@ -93,48 +93,44 @@ nav ul li {
 
 @media (max-width: 768px) {
   nav .hamburger {
-      display: block;
-      margin-right: auto; /* Ensure the hamburger menu is on the left */
+    display: block;
+    margin-right: auto;
   }
   nav ul {
-      flex-direction: column;
-      position: absolute;
-      padding: 0;
-      margin: 0;
-      top: 100%;
-      left: -100%; /* Start off-screen to the left */
-      background: linear-gradient(#9B86BD, #7776B3, #5A639C);
-      width: 50%;
-      height: calc(100vh - 60px);
-      transition: left 0.3s ease;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: -100%;
+    background: linear-gradient(#9B86BD, #7776B3, #5A639C);
+    width: 50%;
+    height: calc(100vh - 60px);
+    transition: left 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
   nav ul.open {
-      left: 0; /* Slide in from the left */
+    left: 0;
   }
 }
 
-/* Width and color of the scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
-/* Background of the scrollbar track set to transparent */
 ::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 10px;
 }
 
-/* Handle of the scrollbar */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
