@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/navya-portfolio-website/static/css/main.af594f1c.css",
-    "main.js": "/navya-portfolio-website/static/js/main.fa027fc3.js",
+    "main.css": "/navya-portfolio-website/static/css/main.b6f08e4e.css",
+    "main.js": "/navya-portfolio-website/static/js/main.22d9dc76.js",
     "static/js/453.816666e1.chunk.js": "/navya-portfolio-website/static/js/453.816666e1.chunk.js",
     "static/media/my_image.png": "/navya-portfolio-website/static/media/my_image.b5df138cf594a6dcdc87.png",
     "static/media/about.gif": "/navya-portfolio-website/static/media/about.2cd34cfd8647d8ac37f9.gif",
     "static/media/missouris&t.png": "/navya-portfolio-website/static/media/missouris&t.6f4a73792465b3195047.png",
     "static/media/css3.png": "/navya-portfolio-website/static/media/css3.e3eaca70a5df942f9b5b.png",
     "static/media/sql.jpg": "/navya-portfolio-website/static/media/sql.b728374ac1aac0c20ba6.jpg",
-    "static/media/planful.png": "/navya-portfolio-website/static/media/planful.4b6a1b098e192bb4c001.png",
+    "static/media/planful.png": "/navya-portfolio-website/static/media/planful.dc1858cb5cb9d269625a.png",
     "index.html": "/navya-portfolio-website/index.html",
-    "main.af594f1c.css.map": "/navya-portfolio-website/static/css/main.af594f1c.css.map",
-    "main.fa027fc3.js.map": "/navya-portfolio-website/static/js/main.fa027fc3.js.map",
+    "main.b6f08e4e.css.map": "/navya-portfolio-website/static/css/main.b6f08e4e.css.map",
+    "main.22d9dc76.js.map": "/navya-portfolio-website/static/js/main.22d9dc76.js.map",
     "453.816666e1.chunk.js.map": "/navya-portfolio-website/static/js/453.816666e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af594f1c.css",
-    "static/js/main.fa027fc3.js"
+    "static/css/main.b6f08e4e.css",
+    "static/js/main.22d9dc76.js"
   ]
 }
