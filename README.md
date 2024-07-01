@@ -23,10 +23,11 @@ Check out the live demo of my portfolio [here](https://navyavalivati.github.io/n
 Your portfolio website should now be running on http://localhost:3000
 
 Technologies Used
-HTML5
-CSS3
-JavaScript
-React
+* HTML5
+* CSS3
+* JavaScript
+* React
+
 Contact
 Feel free to reach out to me at [valivati.navya@gmail.com].
 
